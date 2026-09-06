@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("@fontsource-variable/inter/files/inter-latin-wght-normal.woff2") format("woff2-variations");
+}
+
+@theme {
+    --color-brand: #ff2a2a;
+    --color-brand-dark: #ff416c;
+    --color-night: #0b0b10;
+    --font-sans: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --page-bg: #0b0b10;
+    --section-bg: #120404;
+    --surface: #1c1010;
+    --surface-strong: #111111;
+    --text: #ffffff;
+    --muted: #b8b8b8;
+    --border: rgba(255,255,255,0.1);
+}
+
+html[data-theme="light"] {
+    --page-bg: #ffffff;
+    --section-bg: #ffffff;
+    --surface: #ffffff;
+    --surface-strong: #ffffff;
+    --text: #171717;
+    --muted: #555555;
+    --border: rgba(23,23,23,0.12);
+}
+
+@layer base {
+    body {
+        @apply m-0 min-w-80 overflow-x-hidden bg-[var(--page-bg)] font-sans text-[var(--text)] transition-colors duration-300;
+        background-color: var(--page-bg);
+    }
+}
+
+@keyframes hero-img {
+    from { opacity: 0; transform: translateY(80px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
