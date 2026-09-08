@@ -1,4 +1,4 @@
-const skills = [['HTML', '90%'], ['CSS', '85%'], ['JavaScript', '70%'], ['Photoshop', '88%'], ['SEO', '75%']]
+const skills = [['HTML', '90%'], ['CSS', '85%'], ['JavaScript', '70%'], ['React', '75%'], ['Photoshop', '88%'], ['SEO', '75%']]
 
 export default function Skills() {
     return <div className="mb-[30px]">

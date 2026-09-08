@@ -1,8 +1,10 @@
 import Image from './Image'
+import quizAppImage from '../../Quiz app.png'
 
 const projects = [
     { image: `${import.meta.env.BASE_URL}assets/bussines1.webp`, alt: 'business', title: 'Business Website', description: 'Real estate business website with property listings and responsive UI.', tags: ['HTML', 'CSS', 'JavaScript'], links: [['Project 1', 'https://premhbhai-cell.github.io/Real-state-Bussiness-Website/'], ['Project 2', 'https://premhbhai-cell.github.io/Golden-color-theme-real-state-website/']] },
     { image: `${import.meta.env.BASE_URL}assets/portfolio.webp`, alt: 'portfolio', title: 'Portfolio Website', description: 'Modern developer portfolio website to showcase projects and skills.', tags: ['HTML', 'CSS', 'Responsive'], links: [['Project 1', 'https://premhbhai-cell.github.io/Portfolio/']] },
+    { image: quizAppImage, alt: 'quiz app', title: 'Quiz App', description: 'Interactive quiz application with a focused, responsive user experience.', tags: ['React', 'JavaScript', 'Responsive'], links: [['Live Project', 'https://premhbhai-cell.github.io/Quiz-app/']] },
     { image: 'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=1200&q=70', alt: 'ecommerce', title: 'Ecommerce Website', description: 'Online store design with product showcase and shopping UI.', tags: ['HTML', 'CSS', 'Bootstrap'], links: [['Project 1', '#']] },
     { image: `${import.meta.env.BASE_URL}assets/digital-marketing.webp`, alt: 'marketing', title: 'Digital Marketing Website', description: 'SEO and digital marketing agency website with lead generation layout.', tags: ['SEO', 'Marketing', 'Landing Page'], links: [['Project 1', 'https://optirank.in/']] },
     { image: `${import.meta.env.BASE_URL}assets/coaching-web.webp`, alt: 'coaching website', title: 'Coaching Website', description: 'Professional coaching website with course sections, responsive layout and user-friendly interface.', tags: ['HTML', 'CSS', 'Responsive'], links: [['Live Project', 'https://coachinga.netlify.app/']] },

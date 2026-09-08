@@ -3,7 +3,7 @@ import { useLayoutEffect, useState } from 'react'
 function getInitialTheme() {
     const savedTheme = window.localStorage.getItem('portfolio-theme')
     if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+    return 'light'
 }
 
 function ThemeButton({ theme, onToggle }) {
